@@ -2,5 +2,6 @@
 Beimnet Aklilu, Eyosiyas Girma, P. Grey Moran
 INST377 - Group Project Final
 
-Petfinder CSS
+Petfinder JS
 */
+

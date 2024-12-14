@@ -1,0 +1,46 @@
+/*
+Beimnet Aklilu, Eyosiyas Girma, P. Grey Moran
+INST377 - Group Project Final
+
+Petfinder CSS
+*/
+
+/* Styled using contemporary CSS, including appropriate use of flexbox and grids */
+
+h1 {
+    text-align: center
+}
+
+body {
+    background-color:crimson;
+}
+
+#bar {
+    background-color:black;
+    color:crimson;
+    text-align:center;
+}
+
+#main-nav {
+    background-color:black;
+    color:crimson;
+    text-align:center;
+}
+
+#main-nav li:hover {
+    background-color:crimson;
+    color:black;
+    text-shadow: crimson 1px 0 5px;
+}
+
+#main-nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#main-nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
