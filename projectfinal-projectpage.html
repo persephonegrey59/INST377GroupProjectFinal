@@ -26,98 +26,72 @@
 <!-- Likely use a Rest API ad JS Library-->
 
 
+<!DOCTYPE html>
 <html>
 
+<head>
 
-<!-- head -->
-
-
-<head id="bar">
-
-
-    <title>INST377 - Group Project Final</title>
+    <title>OpenWeatherApp - Project Page</title>
     <link rel="stylesheet" href="projectfinal.css">
-    <script src="projectfinal.js"></script>
+    <script src="projectfinal-frontend.js" defer></script>
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
-
-<!-- Body -->
-
-
 <body>
-
-
+    <!-- Header Section -->
     <header id="bar">
         <h1>Project Page</h1>
-
-
-        <!-- Navigation Bar -->
-        <!-- 3 Pages -->
-        <!-- Home -->
-        <!-- About -->
-        <!-- Project -->
         <nav id="main-nav">
-
-
             <ul>
-
-
-                <!-- Home -->
                 <li><a href="projectfinal-homepage.html">Home</a></li>
-
-
-                <!-- About -->
                 <li><a href="projectfinal-aboutpage.html">About</a></li>
-
-
-                <!-- Project -->
-                <li><a href="projectfinal-projectpage.html">Project</a></li>
-
-
+                <li><a href="projectfinal-projectpage.html" class="active">Project</a></li>
             </ul>
-
-
         </nav>
     </header>
 
-
+    <!-- Main Content -->
     <main>
-        <!-- Project Page Content -->
-        <!-- Form that allows user to enter a city name -->
-        <section id="project-content">
-
-
-            <h2>Enter a Location:</h2>
-
-
+        <!-- Location Form -->
+        <section id="form-section">
+            <h2>Enter a Location</h2>
             <form id="locationForm">
-                <label for="cityName">City Name:</label>
+                <label for="cityName">City:</label>
                 <input type="text" id="cityName" placeholder="Enter city name" required>
-                <button type="submit">Add Location</button>
+                
+                <label for="stateCode">State (Initials):</label>
+                <input type="text" id="stateCode" placeholder="Enter state initials (e.g., NY)" maxlength="2" required>
+                
+                <button type="submit">Get Weather</button>
+                <button type="button" id="saveLocationButton">Save Location</button>
             </form>
-
-
             <div id="submissionMessage"></div>
-
-
-            <div id="locationList"></div>
         </section>
+
+        <!-- Weather Display -->
+        <section id="weatherDisplay"></section>
+
+        <!-- Charts -->
+        <section id="charts">
+            <canvas id="hourlyChart" width="400" height="200"></canvas>
+            <canvas id="dailyChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- Saved Locations -->
+        <section id="locations-section">
+            <h2>Saved Locations</h2>
+            <div id="savedLocations"></div> 
+        </section>
+        
     </main>
-    <!-- On submission, fetch coordinates using Geocoding API and send data to POST endpoint -->
-
-
-    <!-- Call OpenWeatherMap Geocoding API to convert city name into latitue and longitude -->
-
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 INST377 Group Project. All rights reserved.</p>
     </footer>
-
-
 </body>
-
-
-</html>
