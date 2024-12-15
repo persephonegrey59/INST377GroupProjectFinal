@@ -2,7 +2,7 @@
 Beimnet Aklilu, Eyosiyas Girma, P. Grey Moran
 INST377 - Group Project Final
 
-Petfinder CSS
+Project Final CSS
 */
 
 /* Styled using contemporary CSS, including appropriate use of flexbox and grids */
@@ -22,7 +22,7 @@ body {
 }
 
 #main-nav {
-    background-color:black;
+    background-color:#f56991;
     color:crimson;
     text-align:center;
 }
@@ -43,4 +43,11 @@ body {
     display: inline-block;
     padding: 10px;
     text-align: center;
+}
+
+#homepage-clouds {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
 }

@@ -61,7 +61,22 @@
         </nav>
 
         <!-- Project Page Content -->
-    
+        <!-- Form that allows user to enter a city name -->
+        <h2>Enter a location:</h2>
+        <form id="locationForm">
+            <label for="cityName">City Name:</label>
+            <input type="text" id="cityName" required>
+            <button type="submit">Add Location</button>
+        </form>
+
+        <div id="submissionMessage"></div>
+
+        <div id="locationList"></div>
+        
+        <!-- On submission, fetch coordinates using Geocoding API and send data to POST endpoint -->
+
+        <!-- Call OpenWeatherMap Geocoding API to convert city name into latitue and longitude -->
+
     </body>
     
 </html>
