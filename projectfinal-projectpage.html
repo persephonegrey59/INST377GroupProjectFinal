@@ -3,80 +3,121 @@
 <!--                                                -->
 <!-- Project Final Project Page HTML                -->
 
+
 <!-- (Front-end) 3 API Fetch Calls -->
-    <!-- 1 from External API -->
-    <!-- 2 from Backend API -->
-    <!-- Connect to external data source, specifically a Supabase database -->
+<!-- 1 from External API -->
+<!-- 2 from Backend API -->
+<!-- Connect to external data source, specifically a Supabase database -->
 <!-- (Back-end) 2 API End-points that we author -->
-    <!-- 1 must retrieve data from your database -->
-    <!-- 1 can either write data to the DB or get data from an external provider and manipulate it -->
-    <!-- BOTH of these APIs MUST be used by the Front-End -->
+<!-- 1 must retrieve data from your database -->
+<!-- 1 can either write data to the DB or get data from an external provider and manipulate it -->
+<!-- BOTH of these APIs MUST be used by the Front-End -->
+
 
 <!-- Front End must use 2 Javascript libraries -->
-    <!-- Any libraries -->
+<!-- Any libraries -->
+
 
 <!-- 3 Application Pages -->
-    <!-- Home Page -->
-    <!-- About Page -->
-    <!-- Project Functionality Page -->
-        <!-- Core functionality for our application -->
-        <!-- Likely use a Rest API ad JS Library-->
+<!-- Home Page -->
+<!-- About Page -->
+<!-- Project Functionality Page -->
+<!-- Core functionality for our application -->
+<!-- Likely use a Rest API ad JS Library-->
+
 
 <html>
 
-    <!-- Header -->
+
+<!-- head -->
+
+
+<head id="bar">
+
+
+    <title>INST377 - Group Project Final</title>
+    <link rel="stylesheet" href="projectfinal.css">
+    <script src="projectfinal.js"></script>
+
+
+</head>
+
+
+<!-- Body -->
+
+
+<body>
+
+
     <header id="bar">
-            
-        <title>INST377 - Group Project Final</title>
-        <link rel="stylesheet" href="projectfinal.css">
-        <script src="projectfinal.js"></script>
-        
-    </header>
-    
-    <!-- Body -->
-    <body>
-    
         <h1>Project Page</h1>
-            
+
+
         <!-- Navigation Bar -->
-            <!-- 3 Pages -->
-                <!-- Home -->
-                <!-- About -->
-                <!-- Project -->
+        <!-- 3 Pages -->
+        <!-- Home -->
+        <!-- About -->
+        <!-- Project -->
         <nav id="main-nav">
 
+
             <ul>
-                    
+
+
                 <!-- Home -->
                 <li><a href="projectfinal-homepage.html">Home</a></li>
-    
+
+
                 <!-- About -->
                 <li><a href="projectfinal-aboutpage.html">About</a></li>
-    
+
+
                 <!-- Project -->
                 <li><a href="projectfinal-projectpage.html">Project</a></li>
-    
-            </ul>
-    
-        </nav>
 
+
+            </ul>
+
+
+        </nav>
+    </header>
+
+
+    <main>
         <!-- Project Page Content -->
         <!-- Form that allows user to enter a city name -->
-        <h2>Enter a location:</h2>
-        <form id="locationForm">
-            <label for="cityName">City Name:</label>
-            <input type="text" id="cityName" required>
-            <button type="submit">Add Location</button>
-        </form>
+        <section id="project-content">
 
-        <div id="submissionMessage"></div>
 
-        <div id="locationList"></div>
-        
-        <!-- On submission, fetch coordinates using Geocoding API and send data to POST endpoint -->
+            <h2>Enter a Location:</h2>
 
-        <!-- Call OpenWeatherMap Geocoding API to convert city name into latitue and longitude -->
 
-    </body>
-    
+            <form id="locationForm">
+                <label for="cityName">City Name:</label>
+                <input type="text" id="cityName" placeholder="Enter city name" required>
+                <button type="submit">Add Location</button>
+            </form>
+
+
+            <div id="submissionMessage"></div>
+
+
+            <div id="locationList"></div>
+        </section>
+    </main>
+    <!-- On submission, fetch coordinates using Geocoding API and send data to POST endpoint -->
+
+
+    <!-- Call OpenWeatherMap Geocoding API to convert city name into latitue and longitude -->
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 INST377 Group Project. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+
 </html>
