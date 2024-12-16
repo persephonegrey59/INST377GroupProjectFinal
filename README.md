@@ -3,7 +3,8 @@ Beimnet Aklilu, Eyosiyas Girma, Grey Moran
 
 # README
 # OpenWeatherApp
-Website link: https://inst-377-group-project-final-2.vercel.app/
+Website link: https://inst-377-group-project-final-beg.vercel.app
+
 OpenWeatherApp is a user-friendly weather application designed to help you stay informed about the weather conditions in any location. Users are able to search for a city or region and get detailed weather forecasts for both the day and the week ahead. OpenWeatherApp provides reliable and up-to-date information right at your fingertips. 
 
 Our target browsers would be desktop users who could be traveling, looking for outdoor activites, commuters, or general users. 
